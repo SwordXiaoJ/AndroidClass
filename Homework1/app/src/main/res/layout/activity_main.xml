@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ly_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_white">
+
+        <TextView
+            android:id="@+id/txt_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawableTop="@drawable/tab_menu_home"
+            android:gravity="center"
+            android:text="@string/tab_menu_main"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_better"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawableTop="@drawable/tab_menu_channel"
+            android:gravity="center"
+            android:text="课程推荐"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawableTop="@drawable/tab_menu_member"
+            android:gravity="center"
+            android:text="@string/tab_menu_account"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="18sp"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar2"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="56dp"
+        android:background="@color/div_white" />
+
+    <FrameLayout
+        android:id="@+id/ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="618dp"
+        android:layout_above="@id/div_tab_bar2">
+
+    </FrameLayout>
+
+</RelativeLayout>
